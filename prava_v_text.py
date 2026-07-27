@@ -25,7 +25,7 @@ def handle_photo(message):
         # Отправляем файл напрямую в бесплатный OCR движок
         files = {'file': ('image.jpg', downloaded_file, 'image/jpeg')}
         payload = {
-            'apikey': 'helloworld',  # бесплатный универсальный ключ
+            'apikey': 'K88446889388957',  # бесплатный универсальный ключ
             'language': 'rus',        # распознаем русский язык
             'isOverlayRequired': False
         }

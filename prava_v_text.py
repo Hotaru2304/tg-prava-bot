@@ -2,6 +2,10 @@ import os
 import telebot
 import requests
 import base64
+from dotenv import load_dotenv  # Добавлено
+
+# Загружаем переменные из файла .env
+load_dotenv()  # Добавлено
 
 # Бот забирает токен из настроек хостинга Bothost
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
@@ -40,9 +44,11 @@ def handle_photo(message):
         response = requests.post('https://ocr.space', data=payload).json()
 
         if response.get("ParsedResults"):
+            # ДОБАВЛЕН ИНДЕКС, так как ParsedResults — это список
             extracted_text = response["ParsedResults"][0]["ParsedText"]
             
             if extracted_text.strip():
+
                 final_response = (
                     f"📝 **Распознанный текст:**\n\n"
                     f"{extracted_text.strip()}\n\n"

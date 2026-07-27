@@ -2,6 +2,10 @@ import os
 import telebot
 import requests
 import base64
+from dotenv import load_dotenv  # Добавлено
+
+# Загружаем переменные из файла .env
+load_dotenv()  # Добавлено
 
 # Бот забирает токен из настроек хостинга Bothost
 BOT_TOKEN = os.environ.get("BOT_TOKEN")

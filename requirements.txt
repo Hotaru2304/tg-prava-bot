@@ -1,6 +1,2 @@
 pyTelegramBotAPI==4.22.1
-easyocr==1.7.1
-Pillow==10.4.0
-torch==2.2.2 --index-url https://pytorch.org
-torchvision==0.17.2 --index-url https://pytorch.org
-python-dotenv
+requests==2.32.3

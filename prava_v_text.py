@@ -4,7 +4,7 @@ from aiogram import Bot, Dispatcher, types, F
 import easyocr
 
 # Сюда вставьте токен вашего бота в кавычках
-TOKEN = 'ВАШ_ТОКЕН_БОТА'
+TOKEN = '8709476791:AAGW4u0nk0I3v7StyYAHq1RsvBTAGZzcxec'
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
